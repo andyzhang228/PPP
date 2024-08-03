@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <!--choose-->
+    <section class="goTo">
+      <p class="text">Welcome</p>
+      <div class="toInUp">
+        <button class="toLogin">log in</button>
+        <button class="toSignup">sign up</button>
+      </div>
+      <!--Login-->
+      <section class="menu_login hidden">
+      <form class="login">
+        <label>Username</label>
+        <input type="text" class="logUser" placeholder="username" />
+        <label>Password</label>
+        <input type="password" class="logPass" placeholder="password" required />
+        <button class="btn_login">Log In</button>
+        <button class="cancellogin">cancel</button>
+      </form>
+    </section>
+
+    <!--Signup-->
+    <section class="menu-Register hidden">
+        <form class="Register">
+          <label>Username</label>
+          <input type="text" class="SignUser" placeholder="username"  />
+          <label>Password</label>
+          <input type="password" class="SignPass" placeholder="password" required />
+          <button class="btn_Register">Register</button>
+          <button class="cancelsignin">cancel</button>
+        </form>
+      </section>
+
+      <main>
+        <!--Movements-->
+        <div class="container hidden ">
+            <div class="summary_row">
+                <div class="summaryin">
+                    <p class="summary_label">In: </p>
+                    <p class="summary_valuein summary__value--in">0000€</p>
+                </div>
+               
+                <div class="summaryout">
+                    <p class="summary_label">Out: </p>
+                    <p class="summary_valueout summary__value--out">0000€</p>
+                </div>
+            </div>
+
+            <div class="defaultinfo">
+                <ul>
+                No. Type
+                </ul>
+               
+                <ul>
+                  Details
+                </ul>
+                <ul>
+                  Amout
+                </ul>
+              </div>
+              <div class="movements">
+                <div class="movements__row movements_in ">
+                  <div class="movements__type movements__type--in"></div>
+                  <div class="movements__date"> </div>
+                  <div class="movements__value"></div>
+                </div>
+              </div>
+              <div class="allaction">
+                <div class="divin">
+                <form class="income ">
+                  <label for="income"class="label_income"></label>
+                    <input type="text" id="detailincome" placeholder="">
+                    <input type="number" id="income" name="income" min="0" class="incomecon"/>
+                    <button class="income_earn">earn</button>
+                  
+                </form>
+              </div>
+
+              <div class="divspend">
+                <form class="spend ">
+                  <label for="spend" class="label_spend"></label>
+                    <input type="text" id="detailspend" placeholder="">
+                    <input type="number" id="spend" name="spend" min="0" class="spendcon" />
+                    <button class="spend_spend">spend</button>
+                </form>
+              </div>
+            </div>
+        </div>
+      </main>
+      <div class="divlog">
+        <button class="btn_logout hidden ">Log Out</button>
+      </div>
+
+
+  </body>
+</html>
