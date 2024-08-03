@@ -26,7 +26,7 @@ class account {
     this.movementsDatails = [];
   }
 }
-
+//
 const accounts = [account1];
 
 const Welcome = document.querySelector('.text');
